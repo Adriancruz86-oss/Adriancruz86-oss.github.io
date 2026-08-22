@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Adrian Cruz | Children's Book Author</title>
+  <meta name="description" content="Official website of Adrian Cruz, author of the Spark and Quill children's book series. Explore books, series, new releases, and Amazon links." />
+  <meta name="author" content="Adrian Cruz" />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://Adriancruz86-oss.github.io/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Adrian Cruz | Children's Book Author" />
+  <meta property="og:description" content="Explore children's books by Adrian Cruz, including the Spark and Quill series." />
+  <meta property="og:url" content="https://Adriancruz86-oss.github.io/" />
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Adrian Cruz",
+    "jobTitle":"Author",
+    "description":"Children's book author and creator of the Spark and Quill series.",
+    "url":"https://Adriancruz86-oss.github.io/",
+    "sameAs":[
+      "https://www.amazon.com/author/adriancruzbooks"
+    ]
+  }
+  </script>
+
+  <style>
+    :root{
+      --ink:#20302a;
+      --muted:#66736d;
+      --paper:#fffaf1;
+      --cream:#f4ead7;
+      --green:#42685a;
+      --gold:#d59b45;
+      --white:#ffffff;
+      --shadow:0 16px 40px rgba(32,48,42,.10);
+      --radius:24px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color:var(--ink);
+      background:var(--paper);
+      line-height:1.6;
+    }
+    a{color:inherit}
+    .wrap{width:min(1120px,92%);margin:auto}
+    nav{
+      position:sticky;top:0;z-index:20;
+      background:rgba(255,250,241,.92);
+      backdrop-filter:blur(12px);
+      border-bottom:1px solid rgba(32,48,42,.08)
+    }
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{font-weight:800;letter-spacing:.02em;text-decoration:none}
+    .nav-links{display:flex;gap:18px;flex-wrap:wrap}
+    .nav-links a{text-decoration:none;font-weight:650;font-size:.95rem}
+    .hero{
+      padding:88px 0 70px;
+      background:
+        radial-gradient(circle at top right, rgba(213,155,69,.18), transparent 34%),
+        radial-gradient(circle at left 30%, rgba(66,104,90,.12), transparent 32%);
+    }
+    .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:42px;align-items:center}
+    .eyebrow{text-transform:uppercase;letter-spacing:.18em;font-weight:800;color:var(--green);font-size:.8rem}
+    h1{font-size:clamp(3rem,7vw,6.3rem);line-height:.95;margin:.25em 0 .22em;letter-spacing:-.04em}
+    .hero p{font-size:1.15rem;color:var(--muted);max-width:720px}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+    .btn{
+      display:inline-block;text-decoration:none;font-weight:800;
+      padding:13px 19px;border-radius:999px;border:2px solid var(--green)
+    }
+    .btn.primary{background:var(--green);color:white}
+    .btn.secondary{background:transparent}
+    .author-card{
+      background:var(--white);padding:28px;border-radius:var(--radius);box-shadow:var(--shadow);
+      min-height:330px;display:flex;flex-direction:column;justify-content:flex-end;
+      border:1px solid rgba(32,48,42,.08)
+    }
+    .portrait-placeholder{
+      border-radius:18px;min-height:190px;
+      background:linear-gradient(145deg,var(--cream),#fff);
+      display:grid;place-items:center;text-align:center;color:var(--muted);padding:24px;
+      border:1px dashed rgba(32,48,42,.25)
+    }
+    section{padding:76px 0}
+    .section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:28px}
+    h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1.05;margin:0;letter-spacing:-.03em}
+    .section-head p{max-width:620px;color:var(--muted);margin:0}
+    .series-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    .series{
+      background:white;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);
+      border:1px solid rgba(32,48,42,.08)
+    }
+    .series h3{font-size:2rem;margin:.2rem 0}
+    .series p{color:var(--muted)}
+    .book-list{display:grid;gap:12px;margin-top:20px}
+    .book{
+      padding:15px 16px;border-radius:16px;background:var(--paper);
+      border:1px solid rgba(32,48,42,.08)
+    }
+    .book strong{display:block}
+    .tag{display:inline-block;font-size:.74rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--green)}
+    .about{
+      display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;align-items:start
+    }
+    .about-copy{font-size:1.08rem}
+    .about-copy p{color:var(--muted)}
+    .seo-note{background:var(--cream);border-radius:var(--radius);padding:28px}
+    footer{padding:40px 0;border-top:1px solid rgba(32,48,42,.08);color:var(--muted)}
+    @media (max-width:800px){
+      .hero-grid,.series-grid,.about{grid-template-columns:1fr}
+      .hero{padding-top:58px}
+      .nav-inner{align-items:flex-start;gap:12px;flex-direction:column}
+      .section-head{align-items:flex-start;flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+<nav>
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">Adrian Cruz</a>
+    <div class="nav-links">
+      <a href="#books">Books</a>
+      <a href="#about">About</a>
+      <a href="#parents">Parents & Educators</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">Children's Book Author</div>
+      <h1>Stories for curious minds and big feelings.</h1>
+      <p>Adrian Cruz writes warm, imaginative children's books that help young readers explore technology, emotions, choices, friendship, and the world around them.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="https://www.amazon.com/author/adriancruzbooks" target="_blank" rel="noopener">View My Books on Amazon</a>
+        <a class="btn secondary" href="#books">Explore the Series</a>
+      </div>
+    </div>
+    <div class="author-card">
+      <div class="portrait-placeholder">Add Adrian's author photo or author logo here.</div>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section id="books">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">Books by Adrian Cruz</div>
+          <h2>Two worlds. One goal: make reading matter.</h2>
+        </div>
+        <p>This first version is organized around the Spark and Quill series. Individual Amazon product links and final covers can be dropped into these cards as they are confirmed.</p>
+      </div>
+
+      <div class="series-grid">
+        <article class="series">
+          <span class="tag">Technology • AI • Curiosity</span>
+          <h3>The Spark Series</h3>
+          <p>A kid-friendly journey through computers, AI, choices, privacy, and the digital world.</p>
+          <div class="book-list">
+            <div class="book"><strong>Spark Becomes a Computer: From One Tiny Atom to AI</strong><span>Book One</span></div>
+            <div class="book"><strong>Spark Makes a Choice</strong><span>Book Four</span></div>
+            <div class="book"><strong>More Spark titles</strong><span>Add confirmed live titles and links here</span></div>
+          </div>
+        </article>
+
+        <article class="series">
+          <span class="tag">Feelings • Friendship • Growing Up</span>
+          <h3>The Quill Series</h3>
+          <p>Warm meadow adventures about the big emotions children carry into ordinary days.</p>
+          <div class="book-list">
+            <div class="book"><strong>Quill: The Other Side of the Meadow</strong><span>Book One</span></div>
+            <div class="book"><strong>More Quill titles</strong><span>Add confirmed live titles and links here</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about">
+      <div>
+        <div class="eyebrow">About the Author</div>
+        <h2>Adrian Cruz</h2>
+      </div>
+      <div class="about-copy">
+        <p>Adrian Cruz is an independent children's book author creating stories for young readers and families. His work ranges from playful introductions to technology and artificial intelligence in the Spark series to warm, character-driven stories about emotions and growing up in the Quill series.</p>
+        <p>His books are designed to be approachable for children while giving parents, caregivers, and educators a natural starting point for bigger conversations.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="parents">
+    <div class="wrap">
+      <div class="seo-note">
+        <div class="eyebrow">For Parents & Educators</div>
+        <h2>Books that open conversations.</h2>
+        <p>Whether the topic is technology, privacy, confidence, friendship, worry, or making a hard choice, Adrian's books are built to give children a story first and a lesson they can discover naturally along the way.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <strong>Adrian Cruz — Children's Book Author</strong><br />
+    Spark Series • Quill Series<br />
+    © 2026 Adrian Cruz. All rights reserved.
+  </div>
+</footer>
+</body>
+</html>
