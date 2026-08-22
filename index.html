@@ -59,8 +59,8 @@
     }
     .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
     .brand{font-weight:800;letter-spacing:.02em;text-decoration:none}
-    .nav-links{display:flex;gap:18px;flex-wrap:wrap}
-    .nav-links a{text-decoration:none;font-weight:650;font-size:.95rem}
+    .nav-links{display:flex;gap:18px;flex-wrap:nowrap}
+    .nav-links a{text-decoration:none;font-weight:650;font-size:.95rem;white-space:nowrap}
     .hero{
       padding:88px 0 70px;
       background:
@@ -85,10 +85,12 @@
     }
     .portrait-placeholder{
       border-radius:18px;min-height:190px;
-      background:linear-gradient(145deg,var(--cream),#fff);
-      display:grid;place-items:center;text-align:center;color:var(--muted);padding:24px;
-      border:1px dashed rgba(32,48,42,.25)
+      background:linear-gradient(145deg,#f2e4c9,#fffaf1);
+      display:grid;place-items:center;text-align:center;padding:24px;
+      border:1px solid rgba(32,48,42,.08)
     }
+    .monogram{font-size:4rem;font-weight:900;letter-spacing:-.06em;color:var(--green);line-height:1}
+    .monogram small{display:block;font-size:.85rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:14px}
     section{padding:76px 0}
     .section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:28px}
     h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1.05;margin:0;letter-spacing:-.03em}
@@ -116,9 +118,17 @@
     footer{padding:40px 0;border-top:1px solid rgba(32,48,42,.08);color:var(--muted)}
     @media (max-width:800px){
       .hero-grid,.series-grid,.about{grid-template-columns:1fr}
-      .hero{padding-top:58px}
-      .nav-inner{align-items:flex-start;gap:12px;flex-direction:column}
+      .hero{padding-top:54px}
+      .nav-inner{align-items:center;gap:14px;flex-direction:row}
+      .nav-links{gap:12px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+      .nav-links::-webkit-scrollbar{display:none}
+      .nav-links a{font-size:.82rem}
       .section-head{align-items:flex-start;flex-direction:column}
+    }
+    @media (max-width:520px){
+      .brand{font-size:1rem}
+      .nav-inner{justify-content:space-between}
+      h1{font-size:clamp(3rem,15vw,4.7rem)}
     }
   </style>
 </head>
@@ -129,7 +139,7 @@
     <div class="nav-links">
       <a href="#books">Books</a>
       <a href="#about">About</a>
-      <a href="#parents">Parents & Educators</a>
+      <a href="#parents">For Families</a>
     </div>
   </div>
 </nav>
@@ -146,7 +156,7 @@
       </div>
     </div>
     <div class="author-card">
-      <div class="portrait-placeholder">Add Adrian's author photo or author logo here.</div>
+      <div class="portrait-placeholder"><div class="monogram">AC<small>Adrian Cruz · Author</small></div></div>
     </div>
   </div>
 </header>
@@ -157,9 +167,9 @@
       <div class="section-head">
         <div>
           <div class="eyebrow">Books by Adrian Cruz</div>
-          <h2>Two worlds. One goal: make reading matter.</h2>
+          <h2>Stories for curious minds, growing hearts, and family conversations.</h2>
         </div>
-        <p>This first version is organized around the Spark and Quill series. Individual Amazon product links and final covers can be dropped into these cards as they are confirmed.</p>
+        <p>Explore Adrian Cruz's children's books, including technology-forward adventures in the Spark series and warm meadow stories in the Quill series.</p>
       </div>
 
       <div class="series-grid">
@@ -168,9 +178,10 @@
           <h3>The Spark Series</h3>
           <p>A kid-friendly journey through computers, AI, choices, privacy, and the digital world.</p>
           <div class="book-list">
-            <div class="book"><strong>Spark Becomes a Computer: From One Tiny Atom to AI</strong><span>Book One</span></div>
+            <div class="book"><strong>Spark Becomes a Computer</strong><span>Book One</span></div>
+            <div class="book"><strong>Spark Visits the Internet</strong><span>Book Two</span></div>
             <div class="book"><strong>Spark Makes a Choice</strong><span>Book Four</span></div>
-            <div class="book"><strong>More Spark titles</strong><span>Add confirmed live titles and links here</span></div>
+            <div class="book"><strong>Spark Keeps a Secret</strong><span>Privacy, permission, and safe sharing</span></div>
           </div>
         </article>
 
@@ -180,7 +191,8 @@
           <p>Warm meadow adventures about the big emotions children carry into ordinary days.</p>
           <div class="book-list">
             <div class="book"><strong>Quill: The Other Side of the Meadow</strong><span>Book One</span></div>
-            <div class="book"><strong>More Quill titles</strong><span>Add confirmed live titles and links here</span></div>
+            <div class="book"><strong>Quill: The Tallest Tree</strong><span>Book Two</span></div>
+            <div class="book"><strong>Quill and the Broken Kite</strong><span>Book Three</span></div>
           </div>
         </article>
       </div>
@@ -194,7 +206,7 @@
         <h2>Adrian Cruz</h2>
       </div>
       <div class="about-copy">
-        <p>Adrian Cruz is an independent children's book author creating stories for young readers and families. His work ranges from playful introductions to technology and artificial intelligence in the Spark series to warm, character-driven stories about emotions and growing up in the Quill series.</p>
+        <p>Adrian Cruz is an independent children's book author creating warm, imaginative stories for young readers and families. His books pair playful adventures with ideas children can understand—from computers, artificial intelligence, choices, and privacy to friendship, confidence, emotions, and growing up.</p>
         <p>His books are designed to be approachable for children while giving parents, caregivers, and educators a natural starting point for bigger conversations.</p>
       </div>
     </div>
@@ -204,7 +216,7 @@
     <div class="wrap">
       <div class="seo-note">
         <div class="eyebrow">For Parents & Educators</div>
-        <h2>Books that open conversations.</h2>
+        <h2>Read the story. Keep the conversation going.</h2>
         <p>Whether the topic is technology, privacy, confidence, friendship, worry, or making a hard choice, Adrian's books are built to give children a story first and a lesson they can discover naturally along the way.</p>
       </div>
     </div>
