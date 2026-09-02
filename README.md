@@ -24,3 +24,13 @@ https://Adriancruz86-oss.github.io/
 - expand each series and book into dedicated SEO pages as the catalog grows
 - connect a custom domain such as AdrianCruzBooks.com if desired
 - submit sitemap to Google Search Console after publication
+
+## Reader-list setup
+
+The launch form is ready for a privacy-conscious Buttondown embed, but it does not collect addresses until a real account form URL is configured.
+
+1. Create the reader list in Buttondown.
+2. Copy its embed form action URL.
+3. Set `newsletterFormAction` in `site-config.js`.
+
+The form validates email addresses, exposes accessible status messages, and includes consent/unsubscribe language. It deliberately blocks submission while no provider URL is configured so email addresses are never discarded or falsely reported as collected.
