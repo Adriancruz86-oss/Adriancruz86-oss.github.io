@@ -24,3 +24,11 @@ https://Adriancruz86-oss.github.io/
 - expand each series and book into dedicated SEO pages as the catalog grows
 - connect a custom domain such as AdrianCruzBooks.com if desired
 - submit sitemap to Google Search Console after publication
+
+## Reader list
+
+The launch form is connected to Adrian Cruz's Buttondown newsletter at:
+
+https://buttondown.com/adrian_cruz86
+
+The form validates email addresses, exposes accessible status messages, and includes consent and unsubscribe language.
